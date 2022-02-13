@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>MotelF</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-user" viewBox="0 0 32 32">
+      <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- header -->
+  <div class="container-fluid header">
+    <div class="header-image"></div>
+
+    <nav class="nav">
+      <h1>MotelF</h1>
+
+      <div class="nav-menu">
+        <a href="#" class="active">Trang chủ</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./post-room.html">Đăng phòng</a>
+      </div>
+    </nav>
+
+    <div class="header-content">
+      <div class="content">
+        <h2>Ứng dụng hỗ trợ sinh viên tìm kiếm phòng trọ miễn phí hàng đầu Việt Nam </h2>
+      </div>
+      <div class="search-bar-wrapper">
+        <div class="search-bar">
+          <div class="city-wrapper">
+            <div class="city">
+
+              <div class="city-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#f73486" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="#f73486" stroke="none"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <circle cx="128" cy="104" r="32" fill="#fff" stroke="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16"></circle>
+                </svg>
+              </div>
+              <span>Đà Nẵng</span>
+
+            </div>
+          </div>
+          <div class="input">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm theo tên địa điểm, tên đường...">
+            <div class="input-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#fff" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="116" cy="116" r="84" fill="none" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></circle>
+                <line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-content">
+        <span>Chúc bạn có trải nghiệm tuyệt vời !</span>
+        <!-- <span>Nếu bạn là sinh viên, hãy trải nghiệm dịch vụ của chúng tôi</span>
+        <span>Nếu bạn là chủ trọ, hãy liên hệ và hợp tác với chúng tôi </span> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div class="navbar-wrapper">
+    <div class="container navbar">
+      <div class="title">
+        <h1>MotelF</h1>
+      </div>
+      <div class="search-bar-wrapper">
+        <div class="search-bar">
+          <div class="city-wrapper">
+            <div class="city">
+
+              <div class="city-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#f73486" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="#f73486" stroke="none"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                  <circle cx="128" cy="104" r="32" fill="#fff" stroke="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16"></circle>
+                </svg>
+              </div>
+              <span>Đà Nẵng</span>
+
+            </div>
+          </div>
+          <div class="input">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm theo tên địa điểm, tên đường...">
+            <div class="input-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#fff" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="116" cy="116" r="84" fill="none" stroke="#f73486" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></circle>
+                <line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke="#f73486" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="container">
+    <div class="row">
+      <div class="col rooms-wrapper">
+        <div class="room-header d-flex justify-content-between align-items-center">
+          <span class="room-header-title">Phòng mới nhất</span>
+          <button class="room-show-all btn btn-outline-primary">Xem tất cả</button>
+        </div>
+
+        <div class="rooms">
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Hoàng Trung" data-phone="0962043095" data-created-at
+            ="07-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <img src="./images/room1.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <p class="room-title">Ký túc xá quận Thanh Khê</p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <span>Ký túc xá</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>30m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <span>650 Trần Cao Vân, phường Xuân Hà, quận Thanh Khê, thành phố Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <span>1</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Quốc Dũng" data-phone="012345678" data-created-at
+            ="03-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <img src="./images/room2.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <!-- Ten -->
+                <p class="room-title">Phòng trọ khu vực Thanh Khê - Đà Nẵng</p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <span>Phòng trọ</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>20m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <span>K58/06 Nguyễn Đăng, Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <span>1.8</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Đình Dũng" data-phone="012345678" data-created-at
+            ="04-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <!-- Image -->
+                <img src="./images/room3.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <!-- Name -->
+                <p class="room-title">Căn hộ mini, đầy đủ nội thất, quận Hải Châu</p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <!-- Type -->
+                      <span>Phòng trọ</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>30m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <span>650 Trần Cao Vân, phường Xuân Hà, quận Thanh Khê, thành phố Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <!-- Price -->
+                    <span>3.5</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Công Bảo" data-phone="012345678" data-created-at
+            ="05-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <!-- Image -->
+                <img src="./images/room4.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <!-- Name -->
+                <p class="room-title">Phòng trọ và phòng mặt tiền kinh doanh khu trung tâm giữa các trường học gần
+                  Helio, Lotte</p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <!-- Type -->
+                      <span>Phòng trọ</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>30m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <span>3 Đường Phạm Văn Bạch, Phường Hòa Cường Nam, Quận Hải Châu, Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <!-- Price -->
+                    <span>2.5</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Tuấn Bảo" data-phone="012345678" data-created-at
+            ="07-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <!-- Image -->
+                <img src="./images/room5.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <!-- Name -->
+                <p class="room-title">Phòng trọ mới xây, sạch sẽ, thoáng tại 03 Mạc Thị Bưởi, Hòa Cường Nam, Quận Hải
+                  Châu</p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <!-- Type -->
+                      <span>Phòng trọ</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>15m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <!-- Address -->
+                      <span>03 Mạc Thị Bưởi, Phường Hòa Cường Nam, Quận Hải Châu, Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <!-- Price -->
+                    <span>2.0</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-wrapper">
+            <a href="#" target="_blank" class="room-filter" data-name="Nguyễn Văn A" data-phone="012345678" data-created-at
+            ="06-02-2022"></a>
+            <div class="room">
+              <div class="room-img">
+                <!-- Image -->
+                <img src="./images/room6.jpg" alt="">
+              </div>
+              <div class="room-content">
+                <!-- Name -->
+                <p class="room-title">Phòng trọ 18m2 tại Trưng Nữ Vương, Phường Hòa Thuận Tây, Quận Hải Châu, Đà Nẵng
+                </p>
+                <div class="row content">
+                  <div class="col-10">
+                    <div class="room-type">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                          d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                          fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                        </path>
+                      </svg>
+                      <!-- Type -->
+                      <span>Phòng trọ</span>
+                    </div>
+                    <div class="room-roomate-size">
+                      <div class="room-roomate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <circle cx="88" cy="108" r="52" fill="none" stroke="#666666" stroke-miterlimit="10"
+                            stroke-width="16"></circle>
+                          <path d="M155.4,57.9A54.5,54.5,0,0,1,169.5,56a52,52,0,0,1,0,104" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M16,197.4a88,88,0,0,1,144,0" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></path>
+                          <path d="M169.5,160a87.9,87.9,0,0,1,72,37.4" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                        </svg>
+                        <span>Nam & nữ</span>
+                      </div>
+                      <div class="room-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                          viewBox="0 0 256 256">
+                          <rect width="256" height="256" fill="none"></rect>
+                          <rect x="26.2" y="82.7" width="203.6" height="90.51" rx="8"
+                            transform="translate(-53 128) rotate(-45)" fill="none" stroke="#666666"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+                          <line x1="132" y1="60" x2="164" y2="92" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="96" y1="96" x2="128" y2="128" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                          <line x1="60" y1="132" x2="92" y2="164" fill="none" stroke="#666666" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                        <span>18m²</span>
+                      </div>
+                    </div>
+                    <div class="room-address">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <circle cx="128" cy="104" r="32" fill="none" stroke="#666666" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="16"></circle>
+                        <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none"
+                          stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                      </svg>
+                      <span>H11/22k654 Trưng Nữ Vương, Phường Hòa Thuận Tây, Quận Hải Châu, Đà Nẵng</span>
+                    </div>
+                  </div>
+                  <div class="price col-2">
+                    <!-- Price -->
+                    <span>1.8</span>
+                    <span>tr/người</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more">
+          <a href="#" class="show-more">Xem tất cả</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+      <div class="close-wrapper">
+        <span class="close" id="closeModal">&times;</span>
+      </div>
+
+      <div class="room-infor-wrapper">
+        <div class="infor-header">
+          <div class="infor-icon">
+            <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+          </div>
+          <span>Thông tin chủ phòng</span>
+        </div>
+
+        <div class="infor-content">
+          <div class="avatar">
+            <img src="./images/avatar.jpg" alt="avatar">
+          </div>
+          <div class="name-phone">
+            <span id="modal-name">Hoàng Trung</span>
+            <span id="modal-phone">SĐT: 0962043095</span>
+          </div>
+          <div class="created-at">
+            <span id="modal-created-at">Ngày đăng: 07-02-2022</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container footer">
+      <div class="title">
+        <h1>MotelF</h1>
+      </div>
+      <div class="infor">
+        <span>Hotline: 09123233131</span>
+        <div class="social">
+          <div class="facebook">
+            <a href="https://fb.com/trung181" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></circle>
+                <path d="M168,88H152a23.9,23.9,0,0,0-24,24V224" fill="none" stroke="#000000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></path>
+                <line x1="96" y1="144" x2="160" y2="144" fill="none" stroke="#000000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></line>
+              </svg>
+            </a>
+          </div>
+
+          <div class="github">
+            <a href="https://github.com/hoangtrung1801" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <path d="M84,240a23.9,23.9,0,0,0,24-24V168" fill="none" stroke="#000000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></path>
+                <path d="M172,240a23.9,23.9,0,0,1-24-24V168" fill="none" stroke="#000000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></path>
+                <path d="M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24" fill="none" stroke="#000000"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                <path d="M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24" fill="none" stroke="#000000"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                <path
+                  d="M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z"
+                  fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="made-by row">
+        <div class="col-auto">
+          <span>@ Contact : </span>
+        </div>
+        <div class="col d-flex flex-column">
+          <span>Lê Kim Hoàng Trung - 21IT052</span>
+          <span>Trương Thế Quốc Dũng - 21IT014</span>
+          <span>Trần Công Bảo - 21IT005</span>
+          <span>Nguyễn Văn Tuấn Bảo - 21IT061</span>
+          <span>Trương Đình Dũng - 21IT013</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
